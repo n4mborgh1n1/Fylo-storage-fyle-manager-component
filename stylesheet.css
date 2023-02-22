@@ -1,0 +1,241 @@
+body {
+    background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+main {
+    color: hsl(243, 100%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+img {
+    margin: 15px 0 0 12px;
+}
+
+.doc {
+    margin: 12px 0 0 15px;
+}
+
+.menuContainer {
+    width: 350px;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    z-index: 10;
+    margin: 50px 30px -700px -20px;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    
+}
+
+.logo {
+    margin: 40px 0 0 40px;
+}
+
+.containerDoc, .containerFolder, .containerUpload {
+    width: 48px;
+    height: 48px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    margin: 30px 15px 0 0;
+    position: relative;
+    right: 8px;
+}
+
+#menuButtons {
+    margin: 0px 0 0 50px;
+    display: flex;
+    
+}
+
+#storageDisplay {
+    width: 530px;
+    height: 150px;
+    background-color: hsl(228, 56%, 26%);
+    z-index: 10;
+    margin: 60px 0 -745px 0;
+    border-radius: 10px;  
+     
+}
+
+.storage {
+    margin: 20px 0 0 40px;
+}
+
+span {
+    font-weight: 700;
+}
+
+#bar {
+    width: 450px;
+    height: 22px;
+    background-color: hsla(229, 57%, 11%, 0.545);
+    margin: 20px 0 0 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    translate: 0% -50%;
+}
+
+.barUsed {
+    width: 335px;
+    height: 15px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 30px;
+    position: relative;
+    left: 3px;
+
+}
+
+.barCircle {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10000;
+    border-radius: 100%;
+    position: relative;
+    right: 9px;
+}
+
+.speech-bubble {
+    width: 150px;
+    height: 50px;
+    margin: -50px 0 0 320px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    padding: 10px;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 150px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 25px 0px 0 20px;
+}
+
+.storageLeft {
+    color: black;
+    position: relative;
+    bottom: 8px;
+}
+
+.barStart {
+    margin: -5px 0 0 0;
+}
+
+.barEnd {
+    margin: -15px 0 0 390px;
+}
+
+.bg {
+    position: absolute;
+    right: 0;
+    background-image: url(/images/bg-desktop.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+    @media only screen and (max-width: 667px) {
+
+        .bg {
+            width: 100%;
+            height: 100%;
+            background-image: url(/images/bg-mobile.png);
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-top: -10px;
+        }
+
+        .menuContainer {
+            width: 355px;
+            height: 200px;
+            position: absolute;
+            scale: 140%;
+            top: 100px;
+            scale: 100%;
+            margin: 5vh 0 0 0;
+            
+        }
+        
+        #storageDisplay {
+         width: 485px;
+         height: 240px;
+         position: relative;
+         top: 50px;
+         scale: 73%;
+        }
+        
+        .speech-bubble {
+            width: 250px;
+            height: 70px;
+            border-radius: 15px;
+            padding: 10px;
+            position: relative; 
+            top: 245px;
+            right: 210px;
+            display: flex;
+            align-items: center;
+
+        }
+        
+        .speech-bubble::after {
+            content: "";
+            border-width: 0 0 0 0;
+        }
+
+        #bar {
+            width: 400px;
+            height: 30px;
+            margin: 45px 0 0 0;
+        }
+
+        .barUsed {
+            width: 285px;
+            height: 20px;
+            left: 5px;
+        }
+
+        .barStart {
+            margin-left: 0px;
+            font-weight: 700;   
+            font-size: 16px;
+        }
+
+      .barEnd {
+            margin-left: 330px;
+            font-weight: 700;
+            font-size: 16px;           
+        }
+
+      .barCircle {
+            width: 15px;
+            height: 15px;
+            right: 15px;
+        }
+
+       p {
+        position: relative;
+        left: 15px;
+        font-size: 20px;
+       } 
+
+       .storageLeft {
+        scale: 140%;
+        bottom: 13px;
+       }
+}
