@@ -145,7 +145,7 @@ span {
 .bg {
     position: absolute;
     right: 0;
-    background-image: url(/images/bg-desktop.png);
+    background-image: url(images/bg-desktop.png);
     background-position: bottom;
     background-repeat: no-repeat;
     width: 100%;
@@ -157,7 +157,7 @@ span {
         .bg {
             width: 100%;
             height: 100%;
-            background-image: url(/images/bg-mobile.png);
+            background-image: url(images/bg-mobile.png);
             position: absolute;
             background-position: center;
             background-repeat: no-repeat;
